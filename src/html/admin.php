@@ -1,7 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
+    
 <?php 
     session_start();
+    if (!isset($_SESSION['loggedin']) || $_SESSION['customer_email'] !== 'f31ee@localhost') {
+        // Redirect them to login page or show an error message
+        header('Location: index.php'); // Assuming your login page is named 'login.php'
+        exit;
+    }
     $db = new mysqli('localhost', 'root', '', 'pentacafe');
 
     // Check for errors
