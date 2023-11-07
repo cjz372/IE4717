@@ -12,7 +12,7 @@
     if (!$db) {
         die("Connection failed: " . mysqli_connect_error());
     }
-
+var_dump($_POST);
     $foodItemsQuery = "SELECT item_id, item_name FROM menu ORDER BY item_name ASC";
     $foodItemsResult = mysqli_query($db, $foodItemsQuery);
     
