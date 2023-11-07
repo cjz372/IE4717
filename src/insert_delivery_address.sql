@@ -1,18 +1,13 @@
-use pentacafe;
+use penta;
 
--- Insert 14 rows into the menu table without ID and item_rating
-INSERT INTO menu (item_image, item_name, item_price, item_category) VALUES
-('../../assets/menu/burger.jpg', 'Burger', 9.99, 'Mains'),
-('../../assets/menu/burger-set.jpg', 'Burger Set', 12.99, 'Deals'),
-('../../assets/menu/chicken-wings.jpg', 'Chicken Wings', 8.99, 'Sides'),
-('../../assets/menu/fries.jpg', 'Fries', 4.99, 'Sides'),
-('../../assets/menu/hot-coffee.jpg', 'Hot Coffee', 2.99, 'Drinks'),
-('../../assets/menu/hot-latte.jpg', 'Hot Latte', 3.99, 'Drinks'),
-('../../assets/menu/hot-milk-tea.jpg', 'Hot Milk Tea', 3.49, 'Drinks'),
-('../../assets/menu/hot-tea.jpg', 'Hot Tea', 2.49, 'Drinks'),
-('../../assets/menu/iced-coffee.jpg', 'Iced Coffee', 3.49, 'Drinks'),
-('../../assets/menu/iced-latte.jpg', 'Iced Latte', 4.49, 'Drinks'),
-('../../assets/menu/iced-milk-tea.jpg', 'Iced Milk Tea', 3.99, 'Drinks'),
-('../../assets/menu/iced-tea.jpg', 'Iced Tea', 2.99, 'Drinks'),
-('../../assets/menu/juice.jpg', 'Juice', 4.99, 'Drinks'),
-('../../assets/menu/pasta.jpg', 'Pasta', 11.99, 'Mains');
+INSERT INTO delivery_address (order_id, delivery_address) VALUES
+(1, '123 Fake Street, Faketown, FK1 2AB'),
+(2, '456 Fake Avenue, Faketown, FK2 3BC'),
+(3, '789 Fake Boulevard, Faketown, FK3 4CD'),
+(4, '101 Fake Plaza, Faketown, FK4 5DE'),
+(5, '112 Fake Drive, Faketown, FK5 6EF'),
+(6, '131 Fake Lane, Faketown, FK6 7FG'),
+(7, '415 Fake Park, Faketown, FK7 8GH'),
+(8, '161 Fake Square, Faketown, FK8 9HI'),
+(9, '718 Fake Road, Faketown, FK9 0IJ'),
+(10, '192 Fake Gardens, Faketown, FK0 1JK');
