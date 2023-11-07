@@ -3,6 +3,11 @@
         <img src="../../assets/penta_cafe_logo_new2.png" alt="Logo">
     </a>
     <div class="tabs">
+        <div id="authLinks">
+            <?php if ($_SESSION['customer_email'] == 'f31ee@localhost'): ?>
+                <a href="admin.php">Admin</a> 
+              <?php endif; ?>
+        </div>
         <a href="menu.php">Menu</a> 
         <a href="cart.php">Cart</a>  
         <a href="order.php">Order</a> 
